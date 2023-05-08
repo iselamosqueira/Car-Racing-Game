@@ -59,7 +59,7 @@ namespace Car_Racing_Game_MOO_ICT
         private void gameTimerEvent(object sender, EventArgs e)
         {
 
-            txtScore.Text = "Score1: " + score;
+            txtScore.Text = "Score: " + score;
             score++;
 
 
@@ -228,6 +228,11 @@ namespace Car_Racing_Game_MOO_ICT
         }
 
         private void txtScore_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roadTrack2_Click(object sender, EventArgs e)
         {
 
         }
