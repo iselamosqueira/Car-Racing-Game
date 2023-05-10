@@ -31,6 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.txtScore = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.AI2 = new System.Windows.Forms.PictureBox();
             this.AI1 = new System.Windows.Forms.PictureBox();
             this.award = new System.Windows.Forms.PictureBox();
@@ -38,10 +42,6 @@
             this.player = new System.Windows.Forms.PictureBox();
             this.roadTrack2 = new System.Windows.Forms.PictureBox();
             this.roadTrack1 = new System.Windows.Forms.PictureBox();
-            this.btnStart = new System.Windows.Forms.Button();
-            this.txtScore = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AI2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI1)).BeginInit();
@@ -64,6 +64,29 @@
             this.panel1.Controls.Add(this.roadTrack2);
             this.panel1.Controls.Add(this.roadTrack1);
             this.panel1.Name = "panel1";
+            // 
+            // btnStart
+            // 
+            resources.ApplyResources(this.btnStart, "btnStart");
+            this.btnStart.Name = "btnStart";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.restartGame);
+            // 
+            // txtScore
+            // 
+            resources.ApplyResources(this.txtScore, "txtScore");
+            this.txtScore.Name = "txtScore";
+            this.txtScore.Click += new System.EventHandler(this.txtScore_Click);
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // gameTimer
+            // 
+            this.gameTimer.Interval = 20;
+            this.gameTimer.Tick += new System.EventHandler(this.gameTimerEvent);
             // 
             // AI2
             // 
@@ -116,29 +139,6 @@
             this.roadTrack1.Image = global::Car_Racing_Game_MOO_ICT.Properties.Resources.roadTrack;
             this.roadTrack1.Name = "roadTrack1";
             this.roadTrack1.TabStop = false;
-            // 
-            // btnStart
-            // 
-            resources.ApplyResources(this.btnStart, "btnStart");
-            this.btnStart.Name = "btnStart";
-            this.btnStart.UseVisualStyleBackColor = true;
-            this.btnStart.Click += new System.EventHandler(this.restartGame);
-            // 
-            // txtScore
-            // 
-            resources.ApplyResources(this.txtScore, "txtScore");
-            this.txtScore.Name = "txtScore";
-            this.txtScore.Click += new System.EventHandler(this.txtScore_Click);
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // gameTimer
-            // 
-            this.gameTimer.Interval = 20;
-            this.gameTimer.Tick += new System.EventHandler(this.gameTimerEvent);
             // 
             // Form1
             // 
