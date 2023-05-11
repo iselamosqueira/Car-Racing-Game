@@ -33,7 +33,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnStart = new System.Windows.Forms.Button();
             this.txtScore = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.AI2 = new System.Windows.Forms.PictureBox();
             this.AI1 = new System.Windows.Forms.PictureBox();
@@ -42,6 +41,7 @@
             this.player = new System.Windows.Forms.PictureBox();
             this.roadTrack2 = new System.Windows.Forms.PictureBox();
             this.roadTrack1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AI2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI1)).BeginInit();
@@ -77,11 +77,6 @@
             resources.ApplyResources(this.txtScore, "txtScore");
             this.txtScore.Name = "txtScore";
             this.txtScore.Click += new System.EventHandler(this.txtScore_Click);
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
             // 
             // gameTimer
             // 
@@ -140,6 +135,11 @@
             this.roadTrack1.Name = "roadTrack1";
             this.roadTrack1.TabStop = false;
             // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -169,7 +169,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label txtScore;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox roadTrack2;
         private System.Windows.Forms.PictureBox roadTrack1;
         private System.Windows.Forms.PictureBox AI2;
@@ -178,6 +177,7 @@
         private System.Windows.Forms.PictureBox explosion;
         private System.Windows.Forms.PictureBox player;
         private System.Windows.Forms.Timer gameTimer;
+        private System.Windows.Forms.Label label2;
     }
 }
 
