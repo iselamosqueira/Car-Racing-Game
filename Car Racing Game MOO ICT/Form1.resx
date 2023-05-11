@@ -150,6 +150,9 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Car Racing Game MOO ICT</value>
   </data>
+  <data name="AI2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
   <data name="explosion.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
   </data>
@@ -209,8 +212,8 @@ Don't hit any other cars in the game and survive as long as you can</value>
   <data name="player.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 99</value>
   </data>
-  <data name="roadTrack1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>475, 519</value>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;roadTrack1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -236,9 +239,6 @@ Don't hit any other cars in the game and survive as long as you can</value>
   <data name="&gt;&gt;gameTimer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;roadTrack2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="award.Location" type="System.Drawing.Point, System.Drawing">
     <value>116, 207</value>
   </data>
@@ -251,11 +251,14 @@ Don't hit any other cars in the game and survive as long as you can</value>
   <data name="&gt;&gt;player.Name" xml:space="preserve">
     <value>player</value>
   </data>
-  <data name="AI2.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;roadTrack2.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="&gt;&gt;player.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;award.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="txtScore.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -326,14 +329,14 @@ Don't hit any other cars in the game and survive as long as you can</value>
   <data name="roadTrack1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="player.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 402</value>
-  </data>
   <data name="&gt;&gt;AI1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;AI1.Parent" xml:space="preserve">
     <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;roadTrack2.Name" xml:space="preserve">
+    <value>roadTrack2</value>
   </data>
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -347,11 +350,8 @@ Don't hit any other cars in the game and survive as long as you can</value>
   <data name="&gt;&gt;roadTrack1.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;roadTrack2.Name" xml:space="preserve">
-    <value>roadTrack2</value>
-  </data>
-  <data name="&gt;&gt;award.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="roadTrack1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>475, 519</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -374,8 +374,8 @@ Don't hit any other cars in the game and survive as long as you can</value>
   <data name="txtScore.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 534</value>
   </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  <data name="player.Location" type="System.Drawing.Point, System.Drawing">
+    <value>215, 402</value>
   </data>
   <data name="&gt;&gt;player.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -422,10 +422,13 @@ Don't hit any other cars in the game and survive as long as you can</value>
   <metadata name="gameTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>30</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ja</value>
+    <value>es</value>
   </metadata>
 </root>

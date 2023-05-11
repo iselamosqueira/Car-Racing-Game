@@ -143,27 +143,30 @@
     <value>NoControl</value>
   </data>
   <data name="btnStart.Text" xml:space="preserve">
-    <value>スタート</value>
+    <value>Comenzar</value>
   </data>
   <data name="txtScore.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="txtScore.Text" xml:space="preserve">
-    <value>スコア: 0</value>
+    <value>Puntaje: 0</value>
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>車の動き方は右と左のアロー
+    <value>Izquierda y derecha para mover　
 
- 事故がないように行ける所まで</value>
+No choques con otros carros y sobrevive tanto como puedas</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>499, 749</value>
   </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>車レイシングゲーム MOO ICT</value>
+    <value>Juego de carrera de auto MOO ICT</value>
   </data>
 </root>
