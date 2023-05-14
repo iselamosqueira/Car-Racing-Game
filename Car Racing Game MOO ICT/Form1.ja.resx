@@ -159,14 +159,11 @@
 
  事故がないように行ける所まで</value>
   </data>
-  <data name="langPicker.Items" xml:space="preserve">
-    <value>英語</value>
-  </data>
   <data name="langPicker.Items1" xml:space="preserve">
-    <value>ロシア語</value>
+    <value>Русский </value>
   </data>
   <data name="langPicker.Items2" xml:space="preserve">
-    <value>スパイン語</value>
+    <value>español</value>
   </data>
   <data name="langPicker.Items3" xml:space="preserve">
     <value>日本語</value>

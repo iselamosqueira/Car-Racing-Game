@@ -159,9 +159,14 @@
 
 No choques con otros carros y sobrevive tanto como puedas</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>499, 749</value>
+  <data name="langPicker.Items1" xml:space="preserve">
+    <value>Русский </value>
+  </data>
+  <data name="langPicker.Items2" xml:space="preserve">
+    <value>español</value>
+  </data>
+  <data name="langPicker.Items3" xml:space="preserve">
+    <value>日本語</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Juego de carrera de auto MOO ICT</value>
