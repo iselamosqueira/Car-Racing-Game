@@ -149,7 +149,7 @@
     <value>NoControl</value>
   </data>
   <data name="txtScore.Text" xml:space="preserve">
-    <value>Puntaje: 0</value>
+    <value>Puntaje: </value>
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
