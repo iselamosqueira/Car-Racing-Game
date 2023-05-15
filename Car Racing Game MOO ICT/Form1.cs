@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -235,6 +236,31 @@ namespace Car_Racing_Game_MOO_ICT
         private void roadTrack2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void langPicker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           switch (langPicker.SelectedIndex)
+            {
+                case 0:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+                    Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en");
+                    break;
+                case 1:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ru");
+                    Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("ru");
+                    break;
+                case 2:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("es");
+                    Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("es");
+                    break;
+                case 3:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ja");
+                    Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("ja");
+                    break;
+            }
+            this.Controls.Clear();
+            InitializeComponent();
         }
 
         private void playSound()
