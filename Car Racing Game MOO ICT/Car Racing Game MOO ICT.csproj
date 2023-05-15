@@ -134,5 +134,35 @@
   <ItemGroup>
     <None Include="Resources\TruckWhite.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\You Win silver_ja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\You Win gold_ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\You Win gold_es.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\You Win bronze_ja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\You Win silver_ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\You Win silver_es.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\You Win gold_ja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\You Win bronze_ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\You Win bronze_es.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bronze.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

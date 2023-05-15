@@ -171,4 +171,10 @@
   <data name="$this.Text" xml:space="preserve">
     <value>車レイシングゲーム MOO ICT</value>
   </data>
+  <data name="awardBronzePath" xml:space="preserve">
+    <value>Resources\You Win bronze_ja.png</value>
+  </data>
+  <data name="bronze" xml:space="preserve">
+    <value>You Win bronze_ja.png</value>
+  </data>
 </root>

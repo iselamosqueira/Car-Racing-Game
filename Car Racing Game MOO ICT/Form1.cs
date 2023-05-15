@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Car_Racing_Game_MOO_ICT.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,7 @@ namespace Car_Racing_Game_MOO_ICT
         int playerSpeed = 12;
         int score;
         int carImage;
+        string lang;
 
         Random rand = new Random();
         Random carPosition = new Random();
@@ -29,7 +31,8 @@ namespace Car_Racing_Game_MOO_ICT
         public Form1()
         {
             InitializeComponent();
-            ResetGame();
+            //ResetGame();
+            gameOver();
         }
 
         private void keyisdown(object sender, KeyEventArgs e)
@@ -60,7 +63,7 @@ namespace Car_Racing_Game_MOO_ICT
         private void gameTimerEvent(object sender, EventArgs e)
         {
 
-            txtScore.Text = "Score: " + score;
+            txtScore.Text = txtScore.Text.Split(':')[0] + ":" + score;
             score++;
 
 
@@ -106,20 +109,66 @@ namespace Car_Racing_Game_MOO_ICT
 
             if (score > 40 && score < 500)
             {
-                award.Image = Properties.Resources.bronze;
+                switch (lang)
+                {
+
+                    case "es":
+                        award.Image = Properties.Resources.You_Win_bronze_es;
+                        break;
+                    case "ru":
+                        award.Image = Properties.Resources.You_Win_bronze_ru;
+                        break;
+                    case "ja":
+                        award.Image = Properties.Resources.You_Win_bronze_ja;
+                        break;
+                    default:
+                        award.Image = Properties.Resources.bronze;
+                        break;
+                }
             }
 
 
             if (score > 500 && score < 2000)
             {
-                award.Image = Properties.Resources.silver;
+                
+                switch (lang)
+                {
+
+                    case "es":
+                        award.Image = Properties.Resources.You_Win_silver_es;
+                        break;
+                    case "ru":
+                        award.Image = Properties.Resources.You_Win_silver_ru;
+                        break;
+                    case "ja":
+                        award.Image = Properties.Resources.You_Win_silver_ja;
+                        break;
+                    default:
+                        award.Image = Properties.Resources.silver;
+                        break;
+                }
                 roadSpeed = 20;
                 trafficSpeed = 22;
             }
 
             if (score > 2000)
             {
-                award.Image = Properties.Resources.gold;
+                switch (lang)
+                {
+
+                    case "es":
+                        award.Image = Properties.Resources.You_Win_gold_es;
+                        break;
+                    case "ru":
+                        award.Image = Properties.Resources.You_Win_gold_ru;
+                        break;
+                    case "ja":
+                        award.Image = Properties.Resources.You_Win_gold_ja;
+                        break;
+                    default:
+                        award.Image = Properties.Resources.silver;
+                        break;
+                }
                 trafficSpeed = 27;
                 roadSpeed = 25;
             }
@@ -191,7 +240,7 @@ namespace Car_Racing_Game_MOO_ICT
             award.BringToFront();
 
             btnStart.Enabled = true;
-
+            langPicker.Enabled = true;
 
 
 
@@ -201,6 +250,7 @@ namespace Car_Racing_Game_MOO_ICT
         {
 
             btnStart.Enabled = false;
+            langPicker.Enabled = false;
             explosion.Visible = false;
             award.Visible = false;
             goleft = false;
@@ -245,22 +295,37 @@ namespace Car_Racing_Game_MOO_ICT
                 case 0:
                     Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
                     Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en");
+                    lang = "en";
                     break;
                 case 1:
                     Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ru");
                     Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("ru");
+                    lang = "ru";
                     break;
                 case 2:
                     Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("es");
                     Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("es");
+                    lang = "es";
                     break;
                 case 3:
                     Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ja");
                     Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("ja");
+                    lang = "ja";
                     break;
             }
+
             this.Controls.Clear();
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void playSound()
