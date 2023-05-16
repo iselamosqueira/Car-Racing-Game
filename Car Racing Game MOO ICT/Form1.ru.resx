@@ -151,29 +151,19 @@
   <data name="txtScore.Text" xml:space="preserve">
     <value>Счет: 0</value>
   </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
+  </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 634</value>
+    <value>24, 578</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>475, 121</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Нажимайте влево и вправо чтобы перемещать машину　
-
+    <value>Нажимайте влево и вправо чтобы перемещать машину.
 Не врезайтесь в другие машины в игре и выживайте пока можете.</value>
-  </data>
-  <data name="langPicker.Items1" xml:space="preserve">
-    <value>Русский </value>
-  </data>
-  <data name="langPicker.Items2" xml:space="preserve">
-    <value>español</value>
-  </data>
-  <data name="langPicker.Items3" xml:space="preserve">
-    <value>日本語</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Машинные гонки Игра MOO ICT</value>
