@@ -107,7 +107,7 @@ namespace Car_Racing_Game_MOO_ICT
                 gameOver();
             }
 
-            if (score > 40 && score < 500)
+            if (score > 0 && score < 500)
             {
                 switch (lang)
                 {
@@ -128,7 +128,7 @@ namespace Car_Racing_Game_MOO_ICT
             }
 
 
-            if (score > 500 && score < 2000)
+            if (score >= 500 && score < 2000)
             {
                 
                 switch (lang)
@@ -151,7 +151,7 @@ namespace Car_Racing_Game_MOO_ICT
                 trafficSpeed = 22;
             }
 
-            if (score > 2000)
+            if (score >= 2000)
             {
                 switch (lang)
                 {

@@ -151,30 +151,12 @@
   <data name="txtScore.Text" xml:space="preserve">
     <value>スコア: 0</value>
   </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>車の動き方は右と左のアロー
 
  事故がないように行ける所まで</value>
   </data>
-  <data name="langPicker.Items1" xml:space="preserve">
-    <value>Русский </value>
-  </data>
-  <data name="langPicker.Items2" xml:space="preserve">
-    <value>español</value>
-  </data>
-  <data name="langPicker.Items3" xml:space="preserve">
-    <value>日本語</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>車レイシングゲーム MOO ICT</value>
-  </data>
-  <data name="awardBronzePath" xml:space="preserve">
-    <value>Resources\You Win bronze_ja.png</value>
-  </data>
-  <data name="bronze" xml:space="preserve">
-    <value>You Win bronze_ja.png</value>
   </data>
 </root>
